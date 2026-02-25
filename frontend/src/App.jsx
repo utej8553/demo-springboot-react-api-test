@@ -6,7 +6,7 @@ function App() {
   const [response, setResponse] = useState("");
 
   const fetchHello = async () => {
-    const res = await fetch("http://test-backend-service:8080/api/hello");
+    const res = await fetch("/api/hello");
     const data = await res.json();
     setMessage(data.message);
   };
