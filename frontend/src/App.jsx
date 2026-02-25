@@ -12,7 +12,7 @@ function App() {
   };
 
   const sendData = async () => {
-    const res = await fetch("http://localhost:8080/api/echo", {
+    const res = await fetch("/api/echo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
