@@ -6,7 +6,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://test-frontend-service:5173") // React Vite default port
+@CrossOrigin(origins = "*")
 public class DemoController {
 
     @GetMapping("/hello")
@@ -25,3 +25,4 @@ public class DemoController {
     }
 
 }
+
